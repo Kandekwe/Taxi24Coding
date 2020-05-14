@@ -1,0 +1,41 @@
+---
+server:
+  port: 8080
+  servlet:
+    context-path: /taxi24
+---
+
+spring:
+profiles: default
+datasource:
+  crudeapp:
+    url: jdbc:mysql://localhost:3306/taxi24app
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+#    driverClassName: com.mysql.jdbc.Driver
+    defaultSchema:
+    maxPoolSize: 10
+    hibernate:
+      hbm2ddl.method: validate
+      show_sql: false
+      format_sql: true
+      dialect: org.hibernate.dialect.MySQL5Dialect
+      timeout: 2000
+swagger.switch: '1'
+logging:
+
+  file: taxi24.log
+  level:
+    org.springframework.web: ALL
+    rw.bk.taxi24app: ALL
+    org.hibernate: ALL
+    
+server.tomcat.max-threads: 500
+server.tomcat.max-connections: 10000
+spring.autoconfigure.exclude : org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+
+
+context:
+    initializer:
+        classes: rw.bk.taxi24app.configs.ContextInitializer
