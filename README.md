@@ -2,7 +2,13 @@
 
 Bank of Kigali Coding Exercise
 
-This project was completed using Spring boot,Maven,Mysql 5.7 and postman to test endpoints
+This project was completed using:
+
+-Spring boot,Maven,Mysql 5.7
+
+-postman and swagger to test endpoints
+
+-Intellij IDE
 
        SETTING UP WALK -THROUGH
 
@@ -12,8 +18,7 @@ This project was completed using Spring boot,Maven,Mysql 5.7 and postman to test
 
 * Open \taxi24Coding\src\main\resources\application.yml again and change the port if your port is in use and change to a free one, assume that i am using 8080
 
-* Update you working e-amil into TAXI_RIDER table e-mail field in order to receive invoice e-mails
-
+*
 
         RUNNING THE PROJECT
 
