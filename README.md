@@ -18,7 +18,7 @@ This project was completed using:
 
 * Open \taxi24Coding\src\main\resources\application.yml again and change the port if your port is in use and change to a free one, assume that i am using 8080
 
-*
+
 
         RUNNING THE PROJECT
 
@@ -26,20 +26,20 @@ This project was completed using:
 
 * After successfully running the application the following end points will be able to be tested, ensure to have a well working postman
 
- -http://localhost:8080/taxi24/api/taxidrivers/v1/fetchall (it will Get all drivers)
- -http://localhost:8080/taxi24/api/taxidrivers/v1/fetchallavailable(it will Get available Drivers)
- -http://localhost:8080/taxi24/api/taxidrivers/v1/fetchnearestbylocation(it will Get nearest driver within 3km)
- -http://localhost:8080/taxi24/api/taxidrivers/v1/fetchbyid(it will Get driver by ID )
+ http://localhost:8080/taxi24/api/taxidrivers/v1/fetchall (it will Get all drivers)
+ http://localhost:8080/taxi24/api/taxidrivers/v1/fetchallavailable (it will Get available Drivers)
+ http://localhost:8080/taxi24/api/taxidrivers/v1/fetchnearestbylocation (it will Get nearest driver within 3km)
+ http://localhost:8080/taxi24/api/taxidrivers/v1/fetchbyid (it will Get driver by ID )
 
- -http://localhost:8080/taxi24/api/riders/fetchall(It will Get all riders)
- -http://localhost:8080/taxi24/api/riders/fetchbyid(it will Get rider per id)
- -http://localhost:8080/taxi24/api/riders/fetchdriversbyrider(it will Get 3 closest drivers)
+ http://localhost:8080/taxi24/api/riders/fetchall (it will Get all riders)
+ http://localhost:8080/taxi24/api/riders/fetchbyid (it will Get rider per id)
+ http://localhost:8080/taxi24/api/riders/fetchdriversbyrider (it will Get 3 closest drivers)
 
- -http://localhost:8080/taxi24/api/trips/v1/starttrip(it will Post starting of a trip)
- -http://localhost:8080/taxi24/api/trips/v1/createrequest (it Post a request to assign a driver to a rider)
- -http://localhost:8080/taxi24/api/trips/v1/completetrip(it will update a trip after completion)
- -http://localhost:8080/taxi24/api/trips/v1/fetchallactivetrips(it will Get all active trips)
- -http://localhost:8080/taxi24/api/trips/v1/fetchtripsbystatus(it will Get trips by status)
+ http://localhost:8080/taxi24/api/trips/v1/starttrip (it will Post starting of a trip)
+ http://localhost:8080/taxi24/api/trips/v1/createrequest (it Post a request to assign a driver to a rider)
+ http://localhost:8080/taxi24/api/trips/v1/completetrip (it will update a trip after completion)
+ http://localhost:8080/taxi24/api/trips/v1/fetchallactivetrips (it will Get all active trips)
+ http://localhost:8080/taxi24/api/trips/v1/fetchtripsbystatus (it will Get trips by status)
 
 
            TESTING APIs
